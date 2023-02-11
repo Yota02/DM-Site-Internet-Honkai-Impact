@@ -1,0 +1,106 @@
+/* menu déroulent */ 
+nav{width: 100%;margin: 0 auto;background-color: rgb(77, 127, 192);position: static;top: 0px;}
+nav ul{list-style-type: none;}
+nav ul li{float: right;width: 18%;text-align: center;position: relative;}
+nav ul::after{content: "";display: table;clear: both;}
+nav a{display: block;text-decoration: none;color: black;border-bottom: 2px solid transparent;padding: 10px 0px;}
+nav a:hover{color: orange;border-bottom: 2px solid gold;}
+.sous{display: none;box-shadow: 0px 1px 2px #CCC;background-color: white;position: absolute;width: 100%;z-index: 1000;}
+nav > ul li:hover .sous{display: block;}
+.sous li{float: none;width: 100%;text-align: left;}
+.sous a{padding: 10px;border-bottom: none;}
+.sous a:hover{border-bottom: none;background-color: RGBa(200,200,200,0.1);}
+.deroulant > a::after{content:" ▼";font-size: 12px;}
+.conteneur{margin: 50px 20px;height: 1500px;}
+.sidebar {height: 0; width: 150px;position: absolute;left: 0;top: 10;padding-top: 135px;background-color: rgb(80, 133, 202);}
+.meme {color : (77, 127, 192);background-color: rgb(77, 127, 192)} 
+
+/* possitionnement text */  
+.centermk1{top: 100%;left: 50%;}
+.multiple {border : 3px dotted blue}
+.unique {margin : 30px;}
+*{margin: 0px;padding: 0px;font-family: Avenir, sans-serif;}
+.util{position: absolute; top : 6%; right:100;  text-align : center;color: black;}
+
+/* global */
+h1{text-align : center;background-color : white;text-decoration : underline;color : black;}
+h2{text-align : center;text-decoration : underline;color : black;}  
+.img{background-color : white;}
+body{background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);}
+
+/* texte */ 
+.noir{text-align : center;text-decoration : underline;color : black;}
+.centre-texte{text-align : center;}
+.centre-texte-souligne{text-align : center;text-decoration : underline;}
+.centre-texte-souligne-noir{text-align : center;text-decoration : underline;color : black;}
+.texte-marge-centre{margin: 10px 240px 20px;}
+.texte-marge-centre-centré{margin: 10px 240px 20px;text-align : center;}
+.texte-gauche{text-align : left;}
+
+/* fond */ 
+.backblanc{background-color: white;}
+
+/* images */
+.droite-non-aligné{float: right;}
+.gauche-non-aligné{float: left;}
+.img-back-bleu-centre{background-color : rgb(80, 133, 202);text-align : center;display : flex; justify-content : center; align-items : center; top : 2  ;}
+.centre {text-align : center;display : flex; justify-content : center; align-items : center;}
+.centre-non-aligné {display : flex; justify-content : center; align-items : center;}
+.droite{text-align : center;display : flex; justify-content : right; align-items : right;}
+.gauche{text-align : center;display : flex; justify-content : left; align-items : left;}
+
+/* Modal */
+
+.modal {visibility: hidden;opacity: 0;position: absolute;top: 0; right: 0;bottom: 0; left: 0;display: flex;align-items: center;justify-content: center;background: rgba(77, 77, 77, .7);transition: all .4s;height: 110%;}
+.modal:target {visibility: visible;opacity: 1;}
+.modal_content {border-radius: 4px;position: relative; width: 290px ;max-width: 90%;background: white;padding: 1.5em 2em;}
+.modal_close {position: absolute;top: 10px;right: 10px;color: grey;text-decoration: none;}
+.modal_content_meme{border-radius: 4px;position: absolute; width: 650px ;max-width: 90%;background: white;padding: 1.5em 2em;}
+
+/* Tableau */ 
+
+.table_centre{position: absolute;top: 230px; right: 100px; left: 100px; text-align : center;display : flex; justify-content : center; }
+
+/* bouton */ 
+
+.btn_ut{background :rgb(80, 133, 202) ; background-color : white ; position: absolute; top : 2%; right:100;text-align : center;}
+
+/* quiz */
+body{font-size: 20px;font-family: sans-serif;color: #333;}
+.question{font-weight: 600;bottom: 100;}
+.answers {margin-bottom: 400px;}
+.answers label{display: block;}
+#submit{font-family: sans-serif;font-size: 20px;background-color: #279;color: #fff;border: 0px;border-radius: 3px;padding: 20px;cursor: pointer;margin-bottom: 20px;}
+#submit:hover{background-color: #38a;}
+
+/*quiz */
+body{padding: 0;margin: 2;width:100%;height: 100vh; }
+.panel{height: 100vh;display: flex;flex-direction: column;justify-content: center;align-items: center;top : 1; }
+.question-container{margin: 10px;padding: 5px;width: 80vw;height: 10vh;background-color: #c7dddf;font-size: x-large;text-align: center; top : 1; }
+.result{margin: 10px;padding: 5px;width:80vw;height: 10vh;text-align: center;font-size: 50px;}
+.option-container{display: flex;justify-content: space-around; margin: 10px;padding: 5px;width: 80vw;height: 20vh;background-color: #9eb1b3;       }
+.option{padding: 10px;width: 15vw;height: 10vh;font-size: larger;background-color: rgb(80, 133, 202);border-radius: 25%;}
+.option:hover{background-color: orange;}
+.navigation{width: 80vw;height: 10vh;margin: 10px;padding: 5px;display: flex;justify-content: space-around;background-color:#c7dddf;}
+.evaluate,.next{width:30vw;height: 8vh;padding: 5px;font-size: larger;}
+.evaluate{background-color: #50DBB4;}
+.next{color: white;background-color: #BF3325;}
+
+/* mini jeux*/
+canvas { background-image : url(images/1092876.png); position: fixed  ; top : 270px; left : 450px ; }
+.image_mini { position: fixed; top : 270px; left : 450px ; width : 37% ; height: 37%;}
+
+/* slide */ 
+#slider {position: relative;width: 90%;margin: auto;display: flex;align-items: center;animation-name: slide;animation-duration: 10s;}
+#precedent,
+#suivant {cursor: pointer;transition: opacity 0.3s ease;opacity: 0;position: absolute;font-size: 40px;color: rgba(220, 220, 220, 0.8);background-color: rgba(0, 0, 0, 0.8);padding: 10px;}
+#precedent {left: 0;}
+#suivant {right: 0;}
+#slider:hover #precedent,
+#slider:hover #suivant {opacity: 1;}
+.ima{ width : 70%; height : 70% ;left: 170px;position : relative; }
+
+/* Gameplay */ 
+
+.centre_gima {right : 1000px ; left : 0px ; width: 70%; height: 70%; position : relative;}
+.centre_gif {right : 10000px ; left : 0px ;}
